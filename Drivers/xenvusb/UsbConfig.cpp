@@ -165,7 +165,7 @@ GetUsbConfigData(
                 // delay for a while and retry.
                 //
                 LARGE_INTEGER Timeout;
-                Timeout.QuadPart = WDF_REL_TIMEOUT_IN_MS( 200);
+                Timeout.QuadPart = WDF_REL_TIMEOUT_IN_MS(2000);
                 KeDelayExecutionThread(
                     KernelMode,
                     FALSE,

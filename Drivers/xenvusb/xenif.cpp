@@ -1204,7 +1204,7 @@ WaitForScratchCompletion(
             break;
         }
 
-        Timeout.QuadPart = WDF_REL_TIMEOUT_IN_SEC( 2 );
+        Timeout.QuadPart = WDF_REL_TIMEOUT_IN_SEC( 10 );
         Status = KeWaitForSingleObject(
             &fdoContext->ScratchPad.CompletionEvent,
             Executive,
